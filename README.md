@@ -1,20 +1,16 @@
 # Diabetes Prediction System
 
-A machine learning-based diabetes prediction system developed using Python and TensorFlow. The project uses patient health-related features to predict whether an individual belongs to the diabetes-positive or diabetes-negative class.
-
-## Project Overview
-
 This project implements a binary classification neural network using the Pima Indians Diabetes Dataset.
 
-The system takes the following patient attributes as input:
+The system uses the following patient attributes as input:
 
 - Pregnancies
 - Glucose
-- Blood Pressure
-- Skin Thickness
+- BloodPressure
+- SkinThickness
 - Insulin
 - BMI
-- Diabetes Pedigree Function
+- DiabetesPedigreeFunction
 - Age
 
 The target variable is `Outcome`:
@@ -27,7 +23,6 @@ The target variable is `Outcome`:
 - Python
 - Pandas
 - NumPy
-- Matplotlib
 - Scikit-learn
 - TensorFlow
 - Keras
@@ -37,22 +32,22 @@ The target variable is `Outcome`:
 1. Dataset loading
 2. Data inspection
 3. Missing-value checking
-4. Feature and target separation
-5. Train-test splitting
-6. Feature standardization using StandardScaler
-7. Neural network construction
-8. Model training
-9. Model evaluation
-10. Confusion matrix and performance analysis
-11. Model saving
+4. Statistical data analysis
+5. Feature and target separation
+6. Train-test splitting
+7. Feature standardization using StandardScaler
+8. Neural network construction
+9. Model compilation
+10. Model training
+11. Model evaluation
 
 ## Neural Network Architecture
 
 ```text
 Input Layer: 8 Features
         ↓
-Dense Layer: 32 Neurons + ReLU
+Dense Layer: 32 Neurons (ReLU)
         ↓
-Dense Layer: 16 Neurons + ReLU
+Dense Layer: 16 Neurons (ReLU)
         ↓
-Output Layer: 1 Neuron + Sigmoid
+Output Layer: 1 Neuron (Sigmoid)
